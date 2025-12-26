@@ -1,16 +1,24 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammad Imran Khan | Software Technical Expert</title>
+  <title>Mohammad Imran Khan | Software Technical Expert </title>
 
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #f5f6fa;
-      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
 
     a {
@@ -18,75 +26,73 @@
       text-decoration: none;
     }
 
-    .page {
-      max-width: 1100px;
-      margin: 30px auto;
-      background: #fff;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      padding: 30px;
-    }
-
     /* Header */
     .header {
-      border-bottom: 2px solid #0a66c2;
+      border-bottom: 3px solid #0a66c2;
       padding-bottom: 20px;
       margin-bottom: 25px;
     }
 
     .name {
-      font-size: 32px;
-      font-weight: 700;
+      font-size: 34px;
+      font-weight: bold;
     }
 
-    .title {
+    .surname {
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .role {
       font-size: 18px;
-      color: #555;
-      margin-top: 4px;
+      margin-top: 5px;
+      color: #444;
     }
 
     .contact {
       margin-top: 10px;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     /* Layout */
     .content {
       display: flex;
-      gap: 30px;
+      gap: 35px;
     }
 
     .left {
-      width: 72%;
+      width: 73%;
     }
 
     .right {
-      width: 28%;
+      width: 27%;
     }
 
     section {
-      margin-bottom: 25px;
+      margin-bottom: 28px;
     }
 
     section h2 {
-      font-size: 18px;
+      font-size: 20px;
+      color: #0a66c2;
       border-bottom: 1px solid #ddd;
       padding-bottom: 6px;
       margin-bottom: 10px;
-      color: #0a66c2;
-    }
-
-    .role {
-      font-weight: 600;
     }
 
     .company {
-      font-weight: 600;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .position {
+      font-weight: bold;
     }
 
     .meta {
       font-size: 13px;
-      color: #666;
+      color: #555;
       margin-bottom: 6px;
     }
 
@@ -102,11 +108,12 @@
     /* Right column */
     .right h3 {
       font-size: 15px;
-      margin-bottom: 6px;
       color: #0a66c2;
+      margin-bottom: 5px;
+      margin-top: 12px;
     }
 
-    .taglist {
+    .block {
       font-size: 14px;
       line-height: 1.6;
     }
@@ -126,17 +133,17 @@
     <!-- HEADER -->
     <div class="header">
       <div class="name">Mohammad Imran Khan</div>
-      <div class="title">Software Technical Expert</div>
+      <div class="role">Software Technical Expert</div>
+
       <div class="contact">
-        📍 London, UK <br/>
-        📧 imran14989@gmail.com <br/>
-        📧 mohakhan03uk@gmail.com <br/>
-        📞 +44 7398810660 <br/>
-        <a href="https://www.linkedin.com/in/mohaimran/" target="_blank">linkedin.com/in/mohaimran</a>
+        London, UK<br/>
+        GitHub: <a href="https://github.com/mohakhan03uk" target="_blank">github.com/mohakhan03uk</a><br/>
+        LinkedIn: <a href="https://www.linkedin.com/in/mohaimran/" target="_blank">linkedin.com/in/mohaimran</a><br/>
+        Email: imran14989@gmail.com<br/>
+        Phone: +44 7398810660
       </div>
     </div>
 
-    <!-- CONTENT -->
     <div class="content">
 
       <!-- LEFT COLUMN -->
@@ -144,12 +151,14 @@
 
         <section>
           <h2>Summary</h2>
-          <p>
-            11+ years of experience designing and deploying complex, high-performance distributed systems.
-            Lead contributor to Turbo Charging, a real-time charging platform.
-            Strong expertise in distributed architectures, multithreading, performance tuning,
-            and cloud-native delivery using Kubernetes and AWS.
-          </p>
+          <ul>
+            <li>
+              11+ years of experience designing and deploying complex, high-performance distributed systems.
+              • Lead contributor to Turbo Charging product, an advanced real-time charging platform.
+              • Expertise in distributed architectures, multithreading, performance tuning,
+              and cloud native delivery (Kubernetes, AWS).
+            </li>
+          </ul>
         </section>
 
         <section>
@@ -158,54 +167,65 @@
           <div class="company">Amdocs</div>
           <div class="meta">Software Technical Expert | May 2023 – Present | London, UK</div>
           <ul>
-            <li>AWS / EKS migration collaboration with SKY.</li>
-            <li>Led 4-site Active-Active TC deployment with 2-site failover.</li>
-            <li>70–80% recovery time reduction using HBase & Geode snapshots.</li>
-            <li>Reduced event conflicts by 60% via stickiness and idempotency.</li>
-            <li>Reduced Geode C++ client lock contention and timeout rates.</li>
+            <li>Collaborating closely with Customer (SKY) on AWS/EKS migration initiatives.</li>
+            <li>Led deployment of a 4-site Active-Active TC system with 2-site failover capability.</li>
+            <li>Achieved a 70–80% reduction in recovery time using HBase and Geode snapshots.</li>
+            <li>Minimized event conflicts by 60% through stickiness and idempotency strategies.</li>
+            <li>Reduced thread lock contention in the Geode C++ client reducing timeout rates by 1%.</li>
           </ul>
 
           <div class="company">Amdocs</div>
-          <div class="meta">Software Technical Expert | Jul 2022 – May 2023 | Pune, India</div>
+          <div class="meta">Software Technical Expert | July 2022 – May 2023 | Pune, India</div>
           <ul>
-            <li>Performance tuning of containerized Turbo Charging on Kubernetes.</li>
-            <li>Designed Active-Active real-time system with &lt;50ms replica lag.</li>
-            <li>Developed TestNG automation for IMDG & HBase validation.</li>
+            <li>Optimized and tuned the containerized Turbo Charging System for performance, Kubernetes deployment and for better observability.</li>
+            <li>Designed and Developed Active-Active Real-Time System, with replica lag &lt;50ms.</li>
+            <li>Developed TestNG-based automation classes to validate event-processed data in IMDG and HBase against expected results.</li>
           </ul>
 
           <div class="company">Amdocs</div>
-          <div class="meta">Software Development Specialist | Jan 2020 – Jul 2022</div>
+          <div class="meta">Software Development Specialist | Jan 2020 – Jul 2022 | Pune, India</div>
           <ul>
-            <li>LLDs for microservices migration of monolithic system.</li>
-            <li>Integrated Azul Zing JVM, improving throughput by 30%.</li>
-            <li>Resolved client disconnect loops improving system stability.</li>
+            <li>Authored low-level designs (LLDs) for a 10-member team during the transition from a monolithic to Microservices architecture.</li>
+            <li>Integrated Azul Zing JVM for the in-memory data grid (IMDG); increased throughput by 30% and eliminated the GC pauses used to cause outage.</li>
+            <li>Resolved client disconnect loops by enabling tcp_abort_on_overflow, improving server responsiveness and stability.</li>
           </ul>
 
           <div class="company">Amdocs</div>
-          <div class="meta">Software Developer | Feb 2014 – Jan 2020</div>
+          <div class="meta">Software Developer | Feb 2014 – Jan 2020 | Pune, India</div>
           <ul>
-            <li>Introduced FlatBuffers for zero-downtime upgrades.</li>
-            <li>First 5G Turbo Charging deployment for Korea Telecom.</li>
-            <li>Resolved long-standing C++ undefined behavior via static analysis.</li>
+            <li>Introduced FlatBuffers for efficient message serialization to support in-place upgrades.</li>
+            <li>
+              Adapted Korea Telecom to Turbo Charging with zero downtime - first deployment enabled by 5G.
+              • Supported the upgrade of Telkomsel’s platform for 165M + Maxis (10M) users to the latest version,
+              focusing on scalability, reliability, and smooth transition.
+            </li>
+            <li>
+              Identified and resolved an undefined behaviour for 4 years caused by the implicit definition of C++ functions
+              that led to crash; initiated static analysis campaign.
+            </li>
           </ul>
         </section>
 
         <section>
           <h2>Projects</h2>
 
-          <div class="role">Isolation / Stateless Microservices</div>
-          <div class="meta">C++, Java, Kubernetes, Geode, Kafka</div>
+          <div class="position">Isolation / Stateless Microservices</div>
+          <div class="meta">C++ | Java | Kubernetes | Geode | Kafka</div>
           <ul>
-            <li>Refactored monolith into stateless microservices.</li>
-            <li>Enabled horizontal scaling with idempotent event handling.</li>
-            <li>Identified and fixed post-refactor performance bottlenecks.</li>
+            <li>
+              Isolated transaction logic and self-initiated maintenance events to enable service independence.
+              • Achieved horizontal scaling using stateless containers and idempotent event-handling patterns.
+              • Diagnosed and fixed performance bottlenecks introduced after removing local cache.
+            </li>
           </ul>
 
-          <div class="role">Write-Behind Architecture</div>
-          <div class="meta">HBase, Hive, Java</div>
+          <div class="position">Write-Behind Architecture</div>
+          <div class="meta">HBase | Hive | Java</div>
           <ul>
-            <li>Replaced Oracle with HBase and Postgres.</li>
-            <li>Enabled analytics and billing via Hive queries.</li>
+            <li>
+              Designed an asynchronous write-behind buffer to persist transactions and reduce Oracle dependency.
+              • Enabled analytics, billing, auditing via Hive queries on bigdata.
+            </li>
           </ul>
         </section>
 
@@ -218,33 +238,54 @@
           <h2>Skills</h2>
 
           <h3>Programming</h3>
-          <div class="taglist">C, C++, Java, Shell, Assembly</div>
+          <div class="block">C, C++, Java, Shell, Assembly (to debug)</div>
 
-          <h3>DevOps</h3>
-          <div class="taglist">Terraform, Jenkins, Ansible</div>
+          <h3>DevOps Expertise</h3>
+          <div class="block">Terraform, Jenkins, Ansible</div>
 
-          <h3>Frameworks</h3>
-          <div class="taglist">Kafka, Geode, FlatBuffers, ACE, RapidJSON, TestNG, HBase</div>
+          <h3>Frameworks & Tools</h3>
+          <div class="block">Apache Kafka, Geode/Gemfire, FlatBuffers, ACE, RapidJSON, TestNG, HBase</div>
 
           <h3>Concepts</h3>
-          <div class="taglist">Multithreading, EDA, AOP, REST, TDD</div>
+          <div class="block">Multithreading, Event-Driven Architecture, AOP, Socket Programming, REST APIs, TDD</div>
 
-          <h3>Debugging</h3>
-          <div class="taglist">perf, gdb, valgrind, Dynatrace</div>
+          <h3>Profiling / Debugging</h3>
+          <div class="block">perf, gdb, valgrind, JConsole, sar, netstat, dynatrace</div>
 
           <h3>Platforms</h3>
-          <div class="taglist">Kubernetes, Docker, AWS, Linux</div>
+          <div class="block">Kubernetes, Docker, AWS, Linux, VMware</div>
+        </section>
+
+        <section>
+          <h2>Reliability & RCA</h2>
+          <div class="block">
+            Own and document Root Cause Analysis (RCA) for production issues, along with preventive measures,
+            early detection strategies, create WA/SOP.
+          </div>
+        </section>
+
+        <section>
+          <h2>Mentorship</h2>
+          <div class="block">
+            Ongoing daily mentorship (at least 2 dedicated engineers) in Dev & debugging.
+            Discussion of major incidents and solutions.
+          </div>
+        </section>
+
+        <section>
+          <h2>Coursework</h2>
+          <div class="block">AWS, Terraform, Ansible, JavaScript, Jenkins</div>
         </section>
 
         <section>
           <h2>Certifications</h2>
-          <div class="taglist">Certified Kubernetes Application Developer (CKAD)</div>
+          <div class="block">Certified Kubernetes Application Developer (CKAD)</div>
         </section>
 
         <section>
           <h2>Education</h2>
-          <div class="taglist">
-            B.Tech – Information Technology<br/>
+          <div class="block">
+            Bachelor of Technology – Information Technology<br/>
             2009 – 2013
           </div>
         </section>
