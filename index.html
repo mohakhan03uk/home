@@ -1,8 +1,261 @@
-<html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammad Imran Khan | Software Technical Expert</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 2px solid #0a66c2;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Layout */
+    .content {
+      display: flex;
+      gap: 30px;
+    }
+
+    .left {
+      width: 72%;
+    }
+
+    .right {
+      width: 28%;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+      color: #0a66c2;
+    }
+
+    .role {
+      font-weight: 600;
+    }
+
+    .company {
+      font-weight: 600;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 8px 0;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Right column */
+    .right h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #0a66c2;
+    }
+
+    .taglist {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
 
 <body>
-<b> Hi</b>
-  
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="name">Mohammad Imran Khan</div>
+      <div class="title">Software Technical Expert</div>
+      <div class="contact">
+        📍 London, UK <br/>
+        📧 imran14989@gmail.com <br/>
+        📞 +44 7398810660 <br/>
+        🔗 <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a> |
+        <a href="https://www.linkedin.com/in/mohaimran/" target="_blank">linkedin.com/in/mohaimran</a>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- LEFT COLUMN -->
+      <div class="left">
+
+        <section>
+          <h2>Summary</h2>
+          <p>
+            11+ years of experience designing and deploying complex, high-performance distributed systems.
+            Lead contributor to Turbo Charging, a real-time charging platform.
+            Strong expertise in distributed architectures, multithreading, performance tuning,
+            and cloud-native delivery using Kubernetes and AWS.
+          </p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+
+          <div class="company">Amdocs</div>
+          <div class="meta">Software Technical Expert | May 2023 – Present | London, UK</div>
+          <ul>
+            <li>AWS / EKS migration collaboration with SKY.</li>
+            <li>Led 4-site Active-Active TC deployment with 2-site failover.</li>
+            <li>70–80% recovery time reduction using HBase & Geode snapshots.</li>
+            <li>Reduced event conflicts by 60% via stickiness and idempotency.</li>
+            <li>Reduced Geode C++ client lock contention and timeout rates.</li>
+          </ul>
+
+          <div class="company">Amdocs</div>
+          <div class="meta">Software Technical Expert | Jul 2022 – May 2023 | Pune, India</div>
+          <ul>
+            <li>Performance tuning of containerized Turbo Charging on Kubernetes.</li>
+            <li>Designed Active-Active real-time system with &lt;50ms replica lag.</li>
+            <li>Developed TestNG automation for IMDG & HBase validation.</li>
+          </ul>
+
+          <div class="company">Amdocs</div>
+          <div class="meta">Software Development Specialist | Jan 2020 – Jul 2022</div>
+          <ul>
+            <li>LLDs for microservices migration of monolithic system.</li>
+            <li>Integrated Azul Zing JVM, improving throughput by 30%.</li>
+            <li>Resolved client disconnect loops improving system stability.</li>
+          </ul>
+
+          <div class="company">Amdocs</div>
+          <div class="meta">Software Developer | Feb 2014 – Jan 2020</div>
+          <ul>
+            <li>Introduced FlatBuffers for zero-downtime upgrades.</li>
+            <li>First 5G Turbo Charging deployment for Korea Telecom.</li>
+            <li>Resolved long-standing C++ undefined behavior via static analysis.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+
+          <div class="role">Isolation / Stateless Microservices</div>
+          <div class="meta">C++, Java, Kubernetes, Geode, Kafka</div>
+          <ul>
+            <li>Refactored monolith into stateless microservices.</li>
+            <li>Enabled horizontal scaling with idempotent event handling.</li>
+            <li>Identified and fixed post-refactor performance bottlenecks.</li>
+          </ul>
+
+          <div class="role">Write-Behind Architecture</div>
+          <div class="meta">HBase, Hive, Java</div>
+          <ul>
+            <li>Replaced Oracle with HBase and Postgres.</li>
+            <li>Enabled analytics and billing via Hive queries.</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right">
+
+        <section>
+          <h2>Skills</h2>
+
+          <h3>Programming</h3>
+          <div class="taglist">C, C++, Java, Shell, Assembly</div>
+
+          <h3>DevOps</h3>
+          <div class="taglist">Terraform, Jenkins, Ansible</div>
+
+          <h3>Frameworks</h3>
+          <div class="taglist">Kafka, Geode, FlatBuffers, ACE, RapidJSON, TestNG, HBase</div>
+
+          <h3>Concepts</h3>
+          <div class="taglist">Multithreading, EDA, AOP, REST, TDD</div>
+
+          <h3>Debugging</h3>
+          <div class="taglist">perf, gdb, valgrind, Dynatrace</div>
+
+          <h3>Platforms</h3>
+          <div class="taglist">Kubernetes, Docker, AWS, Linux</div>
+        </section>
+
+        <section>
+          <h2>Certifications</h2>
+          <div class="taglist">Certified Kubernetes Application Developer (CKAD)</div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="taglist">
+            B.Tech – Information Technology<br/>
+            2009 – 2013
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Mohammad Imran Khan
+    </footer>
+
+  </div>
 </body>
-  
 </html>
